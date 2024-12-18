@@ -17,9 +17,9 @@ data = {
     "zakkum": "static/images/zakkum.jpg"
 }
 
-@app.route("/")
+@app.route("/arama")
 def index():
-    return render_template("index.html")
+    return render_template("arama.html")
 
 @app.route("/search", methods=["POST"])
 def search():
